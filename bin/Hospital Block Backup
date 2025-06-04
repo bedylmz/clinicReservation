@@ -1,0 +1,61 @@
+hospitalLayout = new SpringLayout();
+//	        hospitalPanel = new JPanel(hospitalLayout);
+//	        hospitalPanel.setBorder(BorderFactory.createTitledBorder("Hospitals"));
+//	        Dimension hospitalPanelSize = new Dimension((int)(frameSizeX*.25), (int)(frameSizeY*.9));
+//	        hospitalPanel.setPreferredSize(hospitalPanelSize);
+//	       
+//	        
+//	        String[] hospitalColumn = {"Name", "ID", "Sections Count"};
+//	        String[][] hospitalRows = new  String[hospitals.values().size()][];
+//	        int hospitalIndex = 0;
+//	        for(Hospital h : hospitals.values())
+//			{
+//				hospitalRows[hospitalIndex] = h.getInfo();
+//				hospitalIndex++;
+//			}
+//	        
+//	        JTable hospitalTable = new JTable(hospitalRows, hospitalColumn);
+//	        hospitalTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+//	        
+//	        JScrollPane scrollHospitalTable = new JScrollPane(hospitalTable);
+//	        Dimension hosptialTableSize = new Dimension((int)(hospitalPanelSize.getWidth()*.9), (int)(hospitalPanelSize.getHeight()*.60));
+//	        scrollHospitalTable.setPreferredSize(hosptialTableSize);
+//
+//	        JButton hospitalAdd = new JButton("Add Hospital");
+//	        hospitalAdd.setPreferredSize(new Dimension((int)(hospitalPanelSize.getWidth()*0.9), (int)(hospitalPanelSize.getHeight()*.05)));
+//	        
+//	        hospitalAdd.addActionListener(
+//	        		new ActionListener() 
+//			        {
+//						@Override
+//						public void actionPerformed(ActionEvent e) 
+//						{
+//							JFrame editFrame = editFrameHospital();
+//							editFrame.setVisible(true);
+//
+//						}
+//			        }
+//	        );
+//	        
+//	        JButton hospitalDelete = new JButton("Delete Selected Hospital");
+//	        hospitalDelete.setPreferredSize(new Dimension((int)(hospitalPanelSize.getWidth()*0.9), (int)(hospitalPanelSize.getHeight()*.05)));
+//	        
+//	        JButton hospitalEdit = new JButton("Edit Selected Hospital");
+//	        hospitalEdit.setPreferredSize(new Dimension((int)(hospitalPanelSize.getWidth()*0.9), (int)(hospitalPanelSize.getHeight()*.05)));
+//
+//	        hospitalLayout.putConstraint(SpringLayout.WEST, scrollHospitalTable, (int)(hospitalPanelSize.getWidth()*.05), SpringLayout.WEST, hospitalPanel);
+//	        hospitalLayout.putConstraint(SpringLayout.NORTH, scrollHospitalTable, (int)(hospitalPanelSize.getHeight()*.01), SpringLayout.NORTH, hospitalPanel);
+//	        
+//	        hospitalLayout.putConstraint(SpringLayout.WEST, hospitalAdd, (int)(hospitalPanelSize.getWidth()*.05), SpringLayout.WEST, hospitalPanel);
+//	        hospitalLayout.putConstraint(SpringLayout.NORTH, hospitalAdd, (int)(hospitalPanelSize.getHeight()*.03), SpringLayout.SOUTH, scrollHospitalTable);
+//	       
+//	        hospitalLayout.putConstraint(SpringLayout.WEST, hospitalDelete, (int)(hospitalPanelSize.getWidth()*.05), SpringLayout.WEST, hospitalPanel);
+//	        hospitalLayout.putConstraint(SpringLayout.NORTH, hospitalDelete, (int)(hospitalPanelSize.getHeight()*.01), SpringLayout.SOUTH, hospitalAdd);
+//	       
+//	        hospitalLayout.putConstraint(SpringLayout.WEST, hospitalEdit, (int)(hospitalPanelSize.getWidth()*.05), SpringLayout.WEST, hospitalPanel);
+//	        hospitalLayout.putConstraint(SpringLayout.NORTH, hospitalEdit, (int)(hospitalPanelSize.getHeight()*.01), SpringLayout.SOUTH, hospitalDelete);
+//        
+//	        hospitalPanel.add(scrollHospitalTable);   
+//	        hospitalPanel.add(hospitalAdd);   
+//	        hospitalPanel.add(hospitalDelete);   
+//	        hospitalPanel.add(hospitalEdit);  
